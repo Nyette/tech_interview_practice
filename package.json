@@ -1,0 +1,15 @@
+{
+  "name": "tech_interview_practice",
+  "version": "1.0.0",
+  "description": "JavaScript Tech Interview Practice",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.4.0"
+  },
+  "scripts": {
+    "tests": "jest",
+    "test": "jest midpoint.test.js"
+  },
+  "author": "Nyette",
+  "license": "ISC"
+}
