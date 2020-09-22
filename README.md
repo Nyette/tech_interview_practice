@@ -1,2 +1,3 @@
-# tech_interview_practice
-JavaScript Tech Interview Practice
+# Tech Interview Practice
+
+I'll be storing my notes in this repo.
