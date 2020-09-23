@@ -7,8 +7,7 @@
     "jest": "^26.4.0"
   },
   "scripts": {
-    "tests": "jest",
-    "test": "jest midpoint.test.js"
+    "test": "jest"
   },
   "author": "Nyette",
   "license": "ISC"

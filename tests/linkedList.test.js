@@ -2,7 +2,7 @@ const { Node, LinkedList } = require('../exercises/linkedList');
 
 describe('getAt', () => {
 
-    test('works on an empty list', () => {
+    test('does not crash when the list is empty', () => {
         let l = new LinkedList();
         expect(l.getAt(0)).toBeNull();
     });
@@ -16,7 +16,6 @@ describe('getAt', () => {
         let l = new LinkedList();
         l.insertAt(0, 'a');
         l.insertAt(1, 'b');
-        expect(l.size()).toEqual(2);
         expect(l.getAt(0).data).toEqual('a');
         expect(l.getAt(1).data).toEqual('b');
     });
@@ -25,7 +24,7 @@ describe('getAt', () => {
 
 describe('removeAt', () => {
 
-    test('works on an empty list', () => {
+    test('does not crash when the list is empty', () => {
         let l = new LinkedList();
         l.removeAt(5);
         expect(l.head).toBeNull();
@@ -42,8 +41,8 @@ describe('removeAt', () => {
         let l = new LinkedList();
         l.insertAt(0, 'a');
         l.removeAt(2);
-        expect(l.size()).toEqual(1);
         expect(l.head.data).toEqual('a');
+        expect(l.head.next).toBeNull();
     });
 
     test('works on a list that has, at least, 1 node', () => {
@@ -51,7 +50,6 @@ describe('removeAt', () => {
         l.insertAt(0, 'a');
         l.insertAt(1, 'b');
         l.removeAt(0);
-        expect(l.size()).toEqual(1);
         expect(l.head.data).toEqual('b');
     });
 
@@ -71,7 +69,6 @@ describe('insertAt', () => {
         l.insertAt(1, 'b');
         l.insertAt(2, 'd');
         l.insertAt(2, 'c');
-        expect(l.size()).toEqual(4);
         expect(l.head.data).toEqual('a');
         expect(l.getAt(1).data).toEqual('b');
         expect(l.getAt(2).data).toEqual('c');
@@ -83,7 +80,6 @@ describe('insertAt', () => {
         l.insertAt(0, 'a');
         l.insertAt(1, 'b');
         l.insertAt(5, 'c');
-        expect(l.size()).toEqual(3);
         expect(l.head.data).toEqual('a');
         expect(l.getAt(1).data).toEqual('b');
         expect(l.getAt(2).data).toEqual('c');
