@@ -4,6 +4,7 @@
   "description": "JavaScript Tech Interview Practice",
   "dependencies": {},
   "devDependencies": {
+    "coveralls": "^3.1.0",
     "jest": "^26.4.0"
   },
   "scripts": {
