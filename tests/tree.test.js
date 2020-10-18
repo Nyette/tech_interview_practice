@@ -37,4 +37,21 @@ describe('Tree', () => {
         expect(t.root).toBeNull();
     });
 
+    test('Traverse BF', () => {
+        let a = new Node(5);
+        a.add(10);
+        a.add(15);
+        let b = a.children[0];
+        let c = a.children[1];
+        let t = new Tree();
+        t.root = a;
+        function double(num) {
+            return num * 2;
+        }
+        t.traverseBF(double);
+        expect(a.data).toEqual(10);
+        expect(b.data).toEqual(20);
+        expect(c.data).toEqual(30);
+    });
+
 });
