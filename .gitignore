@@ -1,4 +1,11 @@
-node_modules
-front_end
+# Node
 main.js
+
+# NPM
+node_modules
 package-lock.json
+
+# Eleventy
+.eleventy.js
+dist
+views

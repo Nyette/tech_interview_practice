@@ -4,6 +4,7 @@
   "description": "JavaScript Tech Interview Practice",
   "dependencies": {},
   "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
     "coveralls": "^3.1.0",
     "jest": "^26.6.3"
   },
