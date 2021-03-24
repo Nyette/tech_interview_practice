@@ -1,11 +1,7 @@
-# Node
-main.js
+# Express
+server.js
+views
 
 # NPM
 node_modules
 package-lock.json
-
-# Eleventy
-.eleventy.js
-dist
-views
