@@ -1,4 +1,4 @@
-const { Node, Tree } = require('../exercises/tree');
+const { Node, Tree } = require('../../data_structures/tree');
 
 describe('Node', () => {
     

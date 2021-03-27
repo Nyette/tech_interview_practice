@@ -1,4 +1,4 @@
-const Queue = require('../exercises/queue');
+const Queue = require('../../data_structures/queue');
 
 test('Creating a queue', () => {
     const q = new Queue();
