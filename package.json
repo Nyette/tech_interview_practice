@@ -14,7 +14,7 @@
     "supervisor": "^0.12.0"
   },
   "scripts": {
-    "start": "supervisor -w views -e node,js,css,html -s server.js",
+    "start": "supervisor -w views -e node,js,njk,css -s app.js",
     "test": "jest",
     "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
   },
