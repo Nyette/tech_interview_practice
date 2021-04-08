@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "JavaScript Tech Interview Practice",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "nunjucks": "^3.2.3",
     "serve-favicon": "^2.5.0"
